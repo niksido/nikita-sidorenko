@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -149,7 +150,7 @@
 </head>
 <body>
   <header>
-    <img src="https://i.imgur.com/qpNCNdj.png" alt="לוגו ניקיטה" class="logo">
+    <img src="images/logo.png" alt="לוגו ניקיטה" class="logo">
     <h1>תהליך ליווי אישי בתזונה וכושר</h1>
     <p>תפריט מותאם אישית | תוכנית אימונים לפי מטרה | ליווי אישי בגובה העיניים</p>
   </header>
@@ -159,59 +160,7 @@
     <p>
       שמי ניקיטה סידורנקו, מאמן כושר מוסמך, יזם, ואדם שעבר שינוי עמוק בעצמו. התחלתי בדיוק מהמקום שאתה נמצא בו – עם ספקות, חוסר ודאות, אבל עם רצון עז להשתפר. עברתי תהליך של חיטוב קיצוני, בניתי לעצמי גוף מאפס, ואימצתי גישה פשוטה – מקצועיות, פרקטיקה, זמינות מלאה ובלי בולשיט. מהיום – אתה לא לבד.
     </p>
-    <img src="https://i.imgur.com/Oie1d6D.png" alt="חתימה" class="signature">
+    <img src="images/signature.png" alt="חתימה" class="signature">
   </section>
-
-  <section class="highlights">
-    <h2>מה תקבל בליווי?</h2>
-    <ul>
-      <li>תפריט תזונה מדויק לפי מה שאתה אוהב לאכול</li>
-      <li>תוכנית אימונים מותאמת אישית לבית או חדר כושר</li>
-      <li>מעקב דו-שבועי עם התאמות לפי התקדמות</li>
-      <li>זמינות גבוהה לשאלות והתייעצויות</li>
-      <li>גישה שמבוססת על תוצאות ולא על קלישאות</li>
-    </ul>
-  </section>
-
-  <section class="form-section">
-    <form action="https://formspree.io/f/xdkzvyro" method="POST" class="form" id="contact-form">
-      <input type="text" name="name" placeholder="שם מלא" required>
-      <input type="email" name="email" placeholder="אימייל" required>
-      <input type="tel" name="phone" placeholder="טלפון" required>
-      <textarea name="message" placeholder="מה היית רוצה להשיג?" rows="4"></textarea>
-      <button type="submit">לתיאום שיחת ייעוץ ללא התחייבות</button>
-    </form>
-  </section>
-
-  <section class="thank-you-message" id="thankYou">
-    <h2>תודה רבה!</h2>
-    <p>הפרטים שלך נקלטו בהצלחה ✅</p>
-    <p>נציג מטעמנו יחזור אליך בהקדם 🙌</p>
-    <p>עד אז, <a href="https://www.instagram.com/nik.sido/" target="_blank">עקוב באינסטגרם ותהנה מהתכנים</a></p>
-  </section>
-
-  <a href="https://www.instagram.com/nik.sido/" target="_blank" class="follow-instagram">עקוב אחרי באינסטגרם</a>
-
-  <script>
-    const form = document.getElementById('contact-form');
-    form.addEventListener('submit', async function(e) {
-      e.preventDefault();
-      const data = new FormData(form);
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: data,
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-      if (response.ok) {
-        form.style.display = 'none';
-        document.getElementById('thankYou').classList.add('active');
-      } else {
-        alert('הייתה בעיה בשליחת הטופס. נסה שוב מאוחר יותר.');
-      }
-    });
-  </script>
-
 </body>
 </html>
